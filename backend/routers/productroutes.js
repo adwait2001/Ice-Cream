@@ -1,7 +1,7 @@
 const express=require('express')
 const Product=require('../models/productmodel') 
 
-const router=express.Router();
+const router=express.Router();//routes to create API
 
 router.get("/",async(req,res)=>{
     const products=await Product.find({})

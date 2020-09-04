@@ -2,7 +2,7 @@ const express=require('express')
 const Order=require('../models/ordermodel'); 
 const { route } = require('./productroutes');
 
-const router=express.Router();
+const router=express.Router();//routes to create Order APIS
 
 router.post("/",async (req, res) => {
     const order = new Order(req.body);

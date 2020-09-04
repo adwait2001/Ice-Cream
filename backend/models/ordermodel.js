@@ -9,7 +9,8 @@ const orderSchema=new mongoose.Schema({
         _id: String,
         ConewaferType:String,
         BaseFlavour:String,
-        Toppings:String
+        Toppings:String,
+        qty:Number
     }]
     //array which contains our products inside our cart
 })
